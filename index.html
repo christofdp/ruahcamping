@@ -303,6 +303,14 @@ html.en .l-af { display: none; }
 .btn.ghost.light { background: transparent; color: #f2f5f0; }
 @media (max-width: 760px) { .quotes { grid-template-columns: 1fr; } }
 .press { margin-top: 26px; padding-top: 18px; border-top: 1px solid color-mix(in srgb, #fff 30%, transparent); max-width: 60ch; }
+
+/* holiday notice */
+.notice { background: var(--accent); color: var(--accent-ink); }
+.notice .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 24px; padding-block: 14px; }
+.notice p { margin: 0; font-size: 1rem; line-height: 1.5; max-width: 72ch; }
+.notice strong { font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-right: 6px; }
+.notice a.wa { font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .95rem; padding: 8px 16px; border: 2px solid currentColor; border-radius: 3px; color: inherit; text-decoration: none; white-space: nowrap; }
+.notice a.wa:hover { background: var(--accent-ink); color: var(--accent); }
 </style>
 </head>
 <body>
@@ -325,6 +333,12 @@ html.en .l-af { display: none; }
     </div>
   </div>
 </nav>
+<aside class="notice" aria-label="Holiday bookings">
+  <div class="wrap">
+    <p><strong><span class="l-af">Vakansieseisoen</span><span class="l-en" lang="en">Holiday season</span></strong><span class="l-af">Ons het nog plek oor die vakansie, net vir <b>groepbesprekings</b>: die hele kamp net vir jou groep (tot 24 mense), R2 500 per nag, minimum 2 en maksimum 5 nagte. Bespreek per WhatsApp by Christof: 082 774 4216.</span><span class="l-en" lang="en">We still have space over the holidays, for <b>group bookings</b> only: the whole camp exclusively for your group (up to 24 people), R2 500 per night, minimum 2 and maximum 5 nights. Book via WhatsApp with Christof: 082 774 4216.</span></p>
+    <a class="wa" href="https://wa.me/27827744216" target="_blank" rel="noopener"><span class="l-af">WhatsApp ons</span><span class="l-en" lang="en">WhatsApp us</span></a>
+  </div>
+</aside>
 
 <header class="hero" id="top">
   <div class="hero-photo" role="img" aria-label="Sunset over the Hex River Valley"></div>
